@@ -2,11 +2,13 @@ from utils.logging_integeration import get_logger
 
 logger = get_logger("rag_pipeline", "logs/rag_pipeline.log")
 
+
 class RAGService:
 
-    def __init__(self, vector_store, embedding_service):
+    def __init__(self, vector_store, embedding_service, llm):
         self.vector_store = vector_store
         self.embedding_service = embedding_service
+        self.llm = llm
 
     def answer_question(self, question: str):
 
@@ -18,10 +20,6 @@ class RAGService:
 
         context = "\n".join(docs)
 
-        answer = self.generate_answer(question, context)
+        answer = self.llm.generate_answer(question, context)
 
         return answer
-
-    def generate_answer(self, question, context):
-        # placeholder (replace with LLM like OpenAI / Llama)
-        return f"Based on context: {context[:300]}..."
