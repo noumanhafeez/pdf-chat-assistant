@@ -1,8 +1,6 @@
-# app/services/ocr_service.py
-
 import pytesseract
 from pdf2image import convert_from_path
-from utils.logging import get_logger
+from utils.logging_integeration import get_logger
 
 logger = get_logger("preprocess", "logs/preprocess.log")
 
