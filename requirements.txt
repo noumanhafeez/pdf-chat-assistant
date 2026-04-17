@@ -1,2 +1,14 @@
 pytesseract
 pdf2image
+pytesseract
+torch
+sentence-transformers==2.6.1
+numpy==1.26.4
+faiss-cpu
+transformers
+fastapi
+uvicorn
+python-multipart
+jinja2
+poppler
+pydantic
