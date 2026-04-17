@@ -35,7 +35,7 @@ Answer briefly and clearly.
 
         output = self.generator(
             prompt,
-            max_new_tokens=128
+            max_new_tokens=250
         )
 
         answer = output[0]["generated_text"]

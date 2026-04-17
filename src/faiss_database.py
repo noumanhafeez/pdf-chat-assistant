@@ -5,7 +5,7 @@ logger = get_logger("faiss_database", "logs/faiss_database.log")
 
 class VectorStore:
 
-    def __init__(self, dim=384):
+    def __init__(self, dim=768):
         self.index = faiss.IndexFlatL2(dim)
         self.text_chunks = []
 
