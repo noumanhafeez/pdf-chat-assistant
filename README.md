@@ -17,6 +17,9 @@ PDF Chat Assistant is a FastAPI-powered RAG (Retrieval-Augmented Generation) app
 
 ---
 
+## Demo
+![PDF Chat Assistant Demo](pdf.gif)
+
 ## Project Structure
 
 ```bash
